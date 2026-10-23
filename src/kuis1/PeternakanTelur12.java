@@ -5,30 +5,39 @@ import java.util.Scanner;
 public class PeternakanTelur12 {
 
     public static void main(String[] args) {
-        
         Scanner dzaka = new Scanner(System.in);
 
-        int hasil_rata-rata_telur;
-        int tray_telur;
-        int rata-rata_berat;
-        double sisa_telur;
-        double berat_total;
-        double blok_kandang;
+        int hasilrataratatelur;
+        int traytelur;
+        int ratarataberat;
+        int totaltelur;
+        int jumlahtray;
+        int telureceran;
+        double berattotal;
+        int blokkandang;
 
-        System.out.println("Masukan hasil rata rata telur");
-        hasilrataratatelur=dzaka.nextInt();
-        System.out.println("Masukan rata rata berat");
-        ratarataaberat=dzaka.nextInt();
-        System.out.println("Masukan tary telur");
-        traytelur=dzaka.nextInt();
+        System.out.println("Masukkan hasil rata-rata telur:");
+        hasilrataratatelur = dzaka.nextInt();
 
-        Totaltelur = hasilrataratatelur * blokkandang;
-        Jumlahtray = totaltelur * traytelur;
-        Telureceran= sisatelur * traytelur;
-        Berattotal(kg) = jumlahtelur * rataratatelur;
+        System.out.println("Masukkan rata-rata berat telur (gram):");
+        ratarataberat = dzaka.nextInt();
 
-        System.out.println("Totaltelur + Jumlahtray + Telureceran + Berattotal(kg)");
+        System.out.println("Masukkan jumlah tray telur:");
+        traytelur = dzaka.nextInt();
 
+        System.out.println("Masukkan jumlah blok kandang:");
+        blokkandang = dzaka.nextInt();
+
+        totaltelur = hasilrataratatelur * blokkandang;
+        jumlahtray = totaltelur / traytelur;
+        telureceran = totaltelur % traytelur;
+        berattotal = (double) totaltelur * ratarataberat / 1000;
+
+        System.out.println("Total telur: " + totaltelur);
+        System.out.println("Jumlah tray: " + jumlahtray);
+        System.out.println("Telur eceran: " + telureceran);
+        System.out.println("Berat total (kg): " + berattotal);
+
+        dzaka.close();
     }
-    
 }

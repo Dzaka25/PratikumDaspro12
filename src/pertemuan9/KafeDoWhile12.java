@@ -1,6 +1,9 @@
 //• hargaKopi = 10000 + (12 mod 5) × 1000 → gantikan Rp12.000 pada soal
 //• hargaTeh = 5000 + (12 mod 4) × 1000 → gantikan Rp7.000 pada soal
 //• hargaRoti = 15000 + (12 mod 6) × 1000 → gantikan Rp20.000 pada soal
+//- hargaKopi = 12000
+//- hargaTeh = 5000
+//- hargaRoti = 15000
 package pertemuan9;
 
 import java.util.Scanner;
@@ -11,8 +14,8 @@ public class KafeDoWhile12 {
         int kopi, teh, roti;
         String namaPelanggan;
         int hargaKopi = 12000;
-        int hargaTeh = 7000;
-        int hargaRoti = 20000;
+        int hargaTeh = 5000;
+        int hargaRoti = 15000;
         int totalHarga;
 
         do {

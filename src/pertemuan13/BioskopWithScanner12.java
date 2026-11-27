@@ -3,13 +3,12 @@ package pertemuan13;
 import java.util.Scanner;
 
 public class BioskopWithScanner12 {
-    public static void main(String[] args) {
+  public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int baris, kolom, menu;
         String nama, pilihan;
         String[][] penonton = new String[4][2];
 
-        // Modifikasi Pertanyaan 2: tambah loop menu utama
         while (true) {
             System.out.println("\n=== MENU BIOSKOP ===");
             System.out.println("1. Input data penonton");
@@ -29,6 +28,11 @@ public class BioskopWithScanner12 {
                         System.out.print("Masukkan kolom: ");
                         kolom = sc.nextInt();
                         sc.nextLine();
+
+                        if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length) {
+                            System.out.println("Nomor baris atau kolom tidak tersedia! Silakan masukkan lagi.");
+                            continue;
+                        }
 
                         penonton[baris - 1][kolom - 1] = nama;
 

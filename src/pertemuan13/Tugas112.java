@@ -3,8 +3,7 @@ package pertemuan13;
 import java.util.Scanner;
 
 public class Tugas112 {
-    
-      public static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[][] survei = new int[10][6];
         double totalSemua = 0;
